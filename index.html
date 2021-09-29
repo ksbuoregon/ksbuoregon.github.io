@@ -1,23 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>My First Web Page</title>
-    <link rel="stylesheet" type="text/css" href=".assets/css/style.css" />
-  </head>
-  <body>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfollio Cover Site</title>
+
+  <link rel="stylesheet" type="text/css" href="assets/style.css" />
+  <title>Professional Portfollio</title>
+</head>
+
+<body>
+
+  <div class="header">
     <header>
-        WEBPAGE OF KIMBERLY S. BROWN
-        <navbar>
-            <h3>Picture</h3>
-            <h3>Bio</h3>
-            <h3>Contact</h3>
-        </navbar>
-      </header>
+      <h1>
+        <section id="hName">Kimberly S. Brown</section>
+      </h1>
+      <h2>Professional Portfollio</h2>
 
+      <!-- https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp-->
+      <div class="navbox">
+        <div class="navbar">
+          <div class="dropdown">
+            <button class="dropbtn">Site Navigation
+            </button>
+            <div class="dropdown-content">
+              <ul>
+                <li>
+                  <a href="#picture">Picture</a>
+                  <a href="#biography">Biography</a>
+                  <a href="#contact-information">Contact Information</a>
+                  <a href="#web-design-1">Web Design #1</a>
+                  <a href="#web-design-2">Web Design #2</a>
+                  <a href="#web-design-3">Web Design #3</a>
+                  <a href="#web-design-4">Web Design #4</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          </nav>
+        </div>
+    </header>
 
-    <script src="assets/js/script.js"></script>
+    <br>
+    <br>
+
+    <div class="container-1">
+      <div class="box-1">
+        <a id="picture">
+          <h3>Picture</h3>
+        </a>
+        <img src="assets/images/picture of me.jpg" alt="Picture of Me">
+      </div>
+
+      <div class="box-2">
+        <a id="biography">
+          <h3>Biography</h3>
+        </a>
+        <p>My most recent employment is running my own law firm as a general family law practitioner in the beautiful
+          town of Sandy, Oregon.
+          My skill set includes the ability to manage over eighty team members to completea job or complete a project on
+          my own, as appropriate.
+          I have managed payroll, prepared tax documents and filings, prepared grant applications,
+          and general business adminstration in addition to the paperwork required for each of my clients.
+          In my worklife, I have worked at a US Embassy, managed two non-profits, and been a consultant for board of
+          directors
+          in the United States and Australia. As a child, I lived on every continent except for Antartica. I
+          still love to travel, although Oregon has been home for my adult life.
+
+        </p>
+      </div>
+
+      <div class="box-3">
+        <a id="contact-information">
+          <h3>Contact Me Via:</h3> <br>
+        </a>
+        <!-- Unordered List Element -->
+        <ul>
+          <h4><span class="label">Cell Phone:</span> 503.781.1685</h4>
+          <h4><span class="label">Email:</span> ksbuoregon@gmail.com</h4>
+          <h4><span class="label">LinkedIn:</span><br class="indent">
+            <p align=right>linkedin.com/in/kimberly-brown-70a15a93</p>
+          </h4>
+          <h4><span class="label">Github:</span> coming soon</h4> <br>
+        </ul>
+      </div>
+    </div>
+
+    <!-- this is the flex box for the top work sample for empoyers to review -->
+    <!-- just a place holder because I did not have a website but I wanted some "color"-->
+    <div class="container-2">
+      <div class="box-4">
+        <a id="web-design-1">
+          <h3>Best Lakes with Campgrounds on Mt. Hood</h3>
+        </a>
+        <img src="assets/images/Mt Hood Jonsrud.jpg" float=left alt="Picture of Mt. Hood">
+        <div class="child-1">
+          <ol>
+            <li>Lost Lake</li>
+            <li>Trillium Lake</li>
+            <li>Timothy Lake</li>
+            <li>Frog Lake</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- this container is for three other work samples for employers to review-->
+
+  <div class="container-3">
+    <div class="box-5">
+      <a id="web-design-2">
+        <h3>Web Design #2</h3>
+      </a>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet
+        fermentum. In eleifend ultricies massa, id pretium purus convallis nec. </p>
+    </div>
+    <div class="box-6">
+      <a id="web-design-3">
+        <h3>Web Design #3</h3>
+      </a>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet
+        fermentum. In eleifend ultricies massa, id pretium purus convallis nec. </p>
+    </div>
+    <div class="box-7">
+      <a id="web-design-4">
+        <h3>Web Design #4</h3>
+      </a>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet
+        fermentum. In eleifend ultricies massa, id pretium purus convallis nec. </p>
+    </div>
+  </div>
+  </div>
+  <footer>
+    <h4>
+      &copy 2021 Kimberly S. Brown
+    </h4>
+  </footer>
 </body>
+
 </html>
